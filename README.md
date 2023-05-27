@@ -60,4 +60,4 @@ spring:
 ```
 
 ### Copyrights
-(C) Stefan Monko (monkos@posam.sk)
+(C) Stefan Monko (stefan@stefanmonko.sk / monkos@posam.sk)

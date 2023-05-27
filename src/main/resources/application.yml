@@ -34,11 +34,11 @@ spring:
     name: accounts-web
   cloud:
     consul:
-      enabled: true
+      enabled: false
       host: localhost
       port: 8500
       discovery:
-        enebled: true
+        enebled: false
         healthCheckPath: ${management.server.servlet.context-path}/actuator/health
         healthCheckInterval: 15s
         tags: env=dev
