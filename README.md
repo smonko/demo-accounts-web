@@ -45,6 +45,19 @@ features:
 **dbdata** - call backend api with data stored in database. Must be ***False*** if ***datastream*** is activated.  
 **messaging** - activate messaging simulation. NOT Implemented YET!  
 
+### Service Discovery
+By default application will register to consul agent. To disable this function modify application.yml:
+```
+spring:
+  ...
+  cloud:
+    consul:
+      enabled: false
+      ...
+      discovery:
+        enebled: false
+        ...
+```
 
 ### Copyrights
 (C) Stefan Monko (monkos@posam.sk)
