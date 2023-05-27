@@ -1,4 +1,4 @@
-# PosAm FullStack Academy Demo app
+# Spring Boot Demo application
 
 ## accounts-web (Frontend)
 
