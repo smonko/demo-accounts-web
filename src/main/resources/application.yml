@@ -1,0 +1,61 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+
+logging:
+  level:
+    org.springframework: INFO
+    com.mkyong: DEBUG
+
+features:
+  canaryflag: true
+  datastream: false
+  dbdata: true
+  messaging: false
+
+management:
+  security:
+    enabled: false
+  endpoint:
+    health:
+      show-details: "ALWAYS"
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+    java:
+      enabled: true
+
+spring:
+  application:
+    name: accounts-web
+  cloud:
+    consul:
+      enabled: true
+      host: localhost
+      port: 8500
+      discovery:
+        enebled: true
+        healthCheckPath: ${management.server.servlet.context-path}/actuator/health
+        healthCheckInterval: 15s
+        tags: env=dev
+        serviceName: dev-${spring.application.name}
+    config:
+      enabled: false
+  profiles:
+    active: dev
+
+integration:
+  backend: "http://localhost:8089"
+
+#custom properties
+info:
+  app:
+    name: accounts-web
+    description: Spring Demo application
+  author: 
+    name: "Stefan Monko"
+    mail: "stefan@stefanmonko.sk / monkos@posam.sk"
