@@ -41,9 +41,9 @@ features:
 ```
 
 **canaryflag** - no real function. Just to demonstrate canary deployment. Check */features*  
-**datastream** - call backend api with built-in data set. Must be ***False*** if ***dbdata*** is activated.
-**dbdata** - call backend api with data stored in database. Must be ***False*** if ***datastream*** is activated.
-**messaging** - activate messaging simulation. NOT Implemented YET!
+**datastream** - call backend api with built-in data set. Must be ***False*** if ***dbdata*** is activated.  
+**dbdata** - call backend api with data stored in database. Must be ***False*** if ***datastream*** is activated.  
+**messaging** - activate messaging simulation. NOT Implemented YET!  
 
 
 ### Copyrights
